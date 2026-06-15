@@ -1,0 +1,6 @@
+`ifndef UART_CONFIG_DEFINES_VH
+`define UART_CONFIG_DEFINES_VH
+
+`define CONFIG_UART_DATA_BITS 8
+
+`endif

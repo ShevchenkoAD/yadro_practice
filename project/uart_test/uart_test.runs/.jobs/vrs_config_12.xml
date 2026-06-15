@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="uart_rx_design_processing_system7_0_0_synth_1" LaunchDir="D:/WorkSpace/HDL/uart_test/uart_test.runs/uart_rx_design_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uart_rx_design_UART_RX_0_0_synth_1" LaunchDir="D:/WorkSpace/HDL/uart_test/uart_test.runs/uart_rx_design_UART_RX_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="uart_rx_design_test_out_0_0_synth_1" LaunchDir="D:/WorkSpace/HDL/uart_test/uart_test.runs/uart_rx_design_test_out_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

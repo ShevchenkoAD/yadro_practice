@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="apuf_uart_design_apuf_0_0_synth_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/apuf_uart_design_apuf_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

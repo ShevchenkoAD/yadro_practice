@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Mon Jun 15 12:02:48 UTC 2026
+VLNV: xilinx.com:user:apuf_parallel:1.0
+SynthRuntime: 36

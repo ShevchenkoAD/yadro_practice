@@ -1,0 +1,92 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Jun 15 15:20:05 2026
+| Host         : Shef running 64-bit major release  (build 9200)
+| Command      : report_drc -file apuf_parallel_uart_design_wrapper_drc_opted.rpt -pb apuf_parallel_uart_design_wrapper_drc_opted.pb -rpx apuf_parallel_uart_design_wrapper_drc_opted.rpx
+| Design       : apuf_parallel_uart_design_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 8
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 8          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[0].apuf_path_i_inst_0/genblk1[127].mux2x1_i_inst_1/q_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[0].apuf_path_i_inst_0/d_ff_inst_0/q_ff_reg {FDRE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[1].apuf_path_i_inst_0/genblk1[127].mux2x1_i_inst_1/q_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[1].apuf_path_i_inst_0/d_ff_inst_0/q_ff_reg {FDRE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[2].apuf_path_i_inst_0/genblk1[127].mux2x1_i_inst_1/q_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[2].apuf_path_i_inst_0/d_ff_inst_0/q_ff_reg {FDRE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[3].apuf_path_i_inst_0/genblk1[127].mux2x1_i_inst_1/q_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[3].apuf_path_i_inst_0/d_ff_inst_0/q_ff_reg {FDRE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[4].apuf_path_i_inst_0/genblk1[127].mux2x1_i_inst_1/q_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[4].apuf_path_i_inst_0/d_ff_inst_0/q_ff_reg {FDRE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[5].apuf_path_i_inst_0/genblk1[127].mux2x1_i_inst_1/q_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[5].apuf_path_i_inst_0/d_ff_inst_0/q_ff_reg {FDRE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[6].apuf_path_i_inst_0/genblk1[127].mux2x1_i_inst_1/q_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[6].apuf_path_i_inst_0/d_ff_inst_0/q_ff_reg {FDRE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[7].apuf_path_i_inst_0/genblk1[127].mux2x1_i_inst_1/q_INST_0 is driving clock pin of 1 cells. This could lead to large hold time violations. First few involved cells are:
+    apuf_parallel_uart_design_i/apuf_parallel_0/inst/u_apuf_parallel/genblk1[7].apuf_path_i_inst_0/d_ff_inst_0/q_ff_reg {FDRE}
+
+Related violations: <none>
+
+

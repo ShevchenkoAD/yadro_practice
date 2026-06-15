@@ -1,0 +1,3 @@
+﻿  main.c
+D:\WorkSpace\C\Projects\LFSR\lfsr_matrix_generation\main.c(163,40): warning C4090: 'function': different 'const' qualifiers
+  lfsr_matrix_generation.vcxproj -> D:\WorkSpace\C\Projects\LFSR\lfsr_matrix_generation\x64\Debug\lfsr_matrix_generation.exe

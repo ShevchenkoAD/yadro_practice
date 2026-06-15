@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Thu Jun 11 13:10:10 UTC 2026
+VLNV: xilinx.com:user:uart_rx:1.0
+SynthRuntime: 28

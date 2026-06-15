@@ -1,0 +1,27 @@
+// Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+// Date        : Thu Jun 11 16:10:10 2026
+// Host        : Shef running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub
+//               d:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.srcs/sources_1/bd/apuf_uart_design/ip/apuf_uart_design_uart_tx_0_0/apuf_uart_design_uart_tx_0_0_stub.v
+// Design      : apuf_uart_design_uart_tx_0_0
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xc7z010clg400-1
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* X_CORE_INFO = "uart_tx_v_wrapper,Vivado 2018.2" *)
+module apuf_uart_design_uart_tx_0_0(clk, rst_n, tx_dv_i, tx_byte_i, tx_serial_o, 
+  tx_active_o, tx_done_o)
+/* synthesis syn_black_box black_box_pad_pin="clk,rst_n,tx_dv_i,tx_byte_i[7:0],tx_serial_o,tx_active_o,tx_done_o" */;
+  input clk;
+  input rst_n;
+  input tx_dv_i;
+  input [7:0]tx_byte_i;
+  output tx_serial_o;
+  output tx_active_o;
+  output tx_done_o;
+endmodule

@@ -1,0 +1,1359 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Jun 12 13:14:35 2026
+| Host         : Shef running 64-bit major release  (build 9200)
+| Command      : report_methodology -file apuf_uart_design_wrapper_methodology_drc_routed.rpt -pb apuf_uart_design_wrapper_methodology_drc_routed.pb -rpx apuf_uart_design_wrapper_methodology_drc_routed.rpx
+| Design       : apuf_uart_design_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 264
++-----------+----------+---------------------------------------------+------------+
+| Rule      | Severity | Description                                 | Violations |
++-----------+----------+---------------------------------------------+------------+
+| TIMING-14 | Warning  | LUT on the clock tree                       | 256        |
+| TIMING-15 | Warning  | Large hold violation on inter-clock path    | 1          |
+| TIMING-16 | Warning  | Large setup violation                       | 2          |
+| TIMING-18 | Warning  | Missing input or output delay               | 4          |
+| TIMING-35 | Warning  | No common node in paths with the same clock | 1          |
++-----------+----------+---------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[0].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#2 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[0].mux2x1_i_0_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#3 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[0].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#4 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[100].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#5 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[100].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#6 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[101].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#7 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[101].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#8 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[102].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#9 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[102].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#10 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[103].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#11 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[103].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#12 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[104].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#13 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[104].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#14 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[105].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#15 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[105].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#16 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[106].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#17 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[106].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#18 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[107].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#19 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[107].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#20 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[108].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#21 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[108].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#22 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[109].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#23 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[109].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#24 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[10].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#25 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[10].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#26 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[110].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#27 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[110].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#28 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[111].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#29 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[111].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#30 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[112].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#31 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[112].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#32 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[113].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#33 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[113].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#34 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[114].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#35 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[114].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#36 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[115].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#37 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[115].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#38 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[116].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#39 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[116].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#40 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[117].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#41 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[117].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#42 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[118].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#43 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[118].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#44 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[119].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#45 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[119].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#46 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[11].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#47 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[11].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#48 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[120].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#49 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[120].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#50 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[121].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#51 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[121].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#52 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[122].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#53 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[122].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#54 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[123].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#55 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[123].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#56 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[124].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#57 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[124].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#58 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[125].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#59 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[125].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#60 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[126].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#61 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[126].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#62 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[127].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#63 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[12].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#64 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[12].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#65 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[13].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#66 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[13].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#67 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[14].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#68 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[14].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#69 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[15].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#70 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[15].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#71 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[16].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#72 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[16].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#73 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[17].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#74 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[17].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#75 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[18].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#76 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[18].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#77 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[19].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#78 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[19].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#79 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[1].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#80 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[1].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#81 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[20].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#82 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[20].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#83 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[21].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#84 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[21].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#85 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[22].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#86 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[22].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#87 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[23].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#88 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[23].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#89 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[24].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#90 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[24].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#91 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[25].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#92 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[25].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#93 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[26].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#94 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[26].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#95 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[27].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#96 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[27].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#97 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[28].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#98 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[28].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#99 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[29].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#100 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[29].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#101 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[2].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#102 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[2].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#103 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[30].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#104 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[30].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#105 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[31].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#106 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[31].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#107 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[32].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#108 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[32].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#109 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[33].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#110 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[33].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#111 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[34].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#112 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[34].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#113 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[35].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#114 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[35].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#115 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[36].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#116 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[36].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#117 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[37].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#118 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[37].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#119 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[38].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#120 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[38].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#121 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[39].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#122 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[39].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#123 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[3].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#124 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[3].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#125 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[40].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#126 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[40].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#127 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[41].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#128 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[41].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#129 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[42].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#130 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[42].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#131 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[43].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#132 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[43].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#133 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[44].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#134 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[44].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#135 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[45].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#136 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[45].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#137 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[46].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#138 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[46].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#139 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[47].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#140 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[47].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#141 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[48].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#142 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[48].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#143 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[49].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#144 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[49].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#145 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[4].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#146 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[4].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#147 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[50].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#148 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[50].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#149 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[51].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#150 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[51].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#151 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[52].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#152 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[52].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#153 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[53].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#154 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[53].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#155 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[54].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#156 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[54].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#157 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[55].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#158 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[55].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#159 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[56].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#160 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[56].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#161 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[57].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#162 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[57].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#163 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[58].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#164 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[58].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#165 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[59].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#166 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[59].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#167 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[5].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#168 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[5].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#169 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[60].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#170 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[60].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#171 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[61].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#172 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[61].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#173 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[62].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#174 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[62].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#175 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[63].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#176 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[63].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#177 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[64].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#178 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[64].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#179 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[65].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#180 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[65].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#181 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[66].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#182 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[66].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#183 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[67].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#184 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[67].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#185 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[68].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#186 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[68].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#187 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[69].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#188 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[69].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#189 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[6].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#190 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[6].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#191 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[70].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#192 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[70].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#193 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[71].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#194 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[71].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#195 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[72].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#196 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[72].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#197 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[73].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#198 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[73].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#199 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[74].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#200 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[74].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#201 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[75].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#202 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[75].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#203 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[76].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#204 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[76].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#205 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[77].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#206 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[77].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#207 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[78].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#208 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[78].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#209 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[79].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#210 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[79].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#211 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[7].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#212 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[7].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#213 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[80].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#214 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[80].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#215 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[81].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#216 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[81].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#217 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[82].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#218 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[82].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#219 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[83].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#220 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[83].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#221 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[84].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#222 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[84].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#223 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[85].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#224 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[85].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#225 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[86].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#226 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[86].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#227 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[87].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#228 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[87].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#229 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[88].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#230 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[88].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#231 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[89].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#232 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[89].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#233 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[8].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#234 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[8].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#235 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[90].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#236 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[90].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#237 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[91].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#238 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[91].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#239 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[92].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#240 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[92].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#241 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[93].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#242 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[93].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#243 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[94].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#244 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[94].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#245 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[95].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#246 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[95].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#247 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[96].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#248 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[96].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#249 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[97].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#250 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[97].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#251 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[98].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#252 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[98].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#253 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[99].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#254 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[99].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#255 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[9].mux2x1_i_0_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-14#256 Warning
+LUT on the clock tree  
+The LUT apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/genblk1[9].mux2x1_i_1_inst/q_INST_0 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-15#1 Warning
+Large hold violation on inter-clock path  
+There is a large inter-clock skew of 213.329 ns between apuf_uart_design_i/apuf_0/inst/u_apuf/lfsr_inst_0/q_ff_reg[127]/C (clocked by clk_fpga_0) and apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/d_ff_inst_0/q_ff_reg/D (clocked by clk_fpga_0) that results in large hold timing violation(s) of -212.033 ns. Fixing large hold violations during routing might impact setup slack and result in more difficult timing closure
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -194.375 ns between apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/d_ff_inst_0/q_ff_reg/C (clocked by clk_fpga_0) and apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/d_ff_inst_1/q_ff_reg/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -53.382 ns between apuf_uart_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] (clocked by clk_fpga_0) and apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/d_ff_inst_0/q_ff_reg/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on rst_n relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on debug_state[0] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on debug_state[1] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on debug_state[2] relative to clock(s) clk_fpga_0
+Related violations: <none>
+
+TIMING-35#1 Warning
+No common node in paths with the same clock  
+The clock clk_fpga_0 has paths without a common node. First path found between apuf_uart_design_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] and apuf_uart_design_i/apuf_0/inst/u_apuf/apuf_path_inst_0/d_ff_inst_0/q_ff_reg/D. Please review clock constraints
+Related violations: <none>
+
+

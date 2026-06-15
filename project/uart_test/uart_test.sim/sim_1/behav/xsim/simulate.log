@@ -1,0 +1,7 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Note: Test Passed - Correct Byte Received
+Time: 82500 ns  Iteration: 2  Process: /UART_TB/line__67  File: D:/WorkSpace/HDL/uart_test/uart_test.srcs/sim_1/new/uart_tb.vhd
+Failure: Tests Complete
+Time: 82500 ns  Iteration: 2  Process: /UART_TB/line__67  File: D:/WorkSpace/HDL/uart_test/uart_test.srcs/sim_1/new/uart_tb.vhd
+$finish called at time : 82500 ns : File "D:/WorkSpace/HDL/uart_test/uart_test.srcs/sim_1/new/uart_tb.vhd" Line 88

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="apuf_uart_design_auto_pc_0_synth_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/apuf_uart_design_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="apuf_uart_design_uart_rx_0_0_synth_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/apuf_uart_design_uart_rx_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="apuf_uart_design_processing_system7_0_0_synth_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/apuf_uart_design_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="apuf_uart_design_apuf_0_0_synth_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/apuf_uart_design_apuf_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="apuf_uart_design_uart_tx_0_0_synth_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/apuf_uart_design_uart_tx_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="apuf_uart_design_rst_ps7_0_50M_0_synth_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/apuf_uart_design_rst_ps7_0_50M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="apuf_uart_design_axi_uartlite_0_0_synth_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/apuf_uart_design_axi_uartlite_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="apuf_uart_design_auto_pc_0_synth_1"/>
+		<Parent Id="apuf_uart_design_uart_rx_0_0_synth_1"/>
+		<Parent Id="apuf_uart_design_processing_system7_0_0_synth_1"/>
+		<Parent Id="apuf_uart_design_apuf_0_0_synth_1"/>
+		<Parent Id="apuf_uart_design_uart_tx_0_0_synth_1"/>
+		<Parent Id="apuf_uart_design_rst_ps7_0_50M_0_synth_1"/>
+		<Parent Id="apuf_uart_design_axi_uartlite_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="apuf_uart_design_auto_pc_0_synth_1"/>
+		<Parent Id="apuf_uart_design_uart_rx_0_0_synth_1"/>
+		<Parent Id="apuf_uart_design_processing_system7_0_0_synth_1"/>
+		<Parent Id="apuf_uart_design_apuf_0_0_synth_1"/>
+		<Parent Id="apuf_uart_design_uart_tx_0_0_synth_1"/>
+		<Parent Id="apuf_uart_design_rst_ps7_0_50M_0_synth_1"/>
+		<Parent Id="apuf_uart_design_axi_uartlite_0_0_synth_1"/>
+	</Run>
+</Runs>
+

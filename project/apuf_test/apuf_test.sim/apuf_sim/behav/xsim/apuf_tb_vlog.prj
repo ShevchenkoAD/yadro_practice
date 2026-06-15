@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../../../inc" \
+"../../../../../../pkg/general_param_pkg.sv" \
+"../../../../../../pkg/uart_param_pkg.sv" \
+"../../../../../../pkg/apuf_param_pkg.sv" \
+"../../../../../../src/lfsr.sv" \
+"../../../../../../src/d_ff.sv" \
+"../../../../../../src/apuf_path.sv" \
+"../../../../../../src/sipo.sv" \
+"../../../../../../src/uart_rx.sv" \
+"../../../../../../src/apuf.sv" \
+"../../../../../../src/mux2x1.sv" \
+"../../../../../../src/uart_tx.sv" \
+"../../../../../../tb/apuf_tb.sv" \
+"../../../../../../tb/uart_tb.sv" \
+"../../../../../../tb/lfsr_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

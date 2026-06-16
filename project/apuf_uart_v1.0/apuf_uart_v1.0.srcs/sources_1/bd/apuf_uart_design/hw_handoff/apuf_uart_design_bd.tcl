@@ -164,7 +164,7 @@ proc create_root_design { parentCell } {
   set rst_n [ create_bd_port -dir I -type rst rst_n ]
 
   # Create instance: apuf_0, and set properties
-  set apuf_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:apuf:1.0 apuf_0 ]
+  set apuf_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:apuf:1.1 apuf_0 ]
 
   # Create instance: axi_uartlite_0, and set properties
   set axi_uartlite_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0 ]

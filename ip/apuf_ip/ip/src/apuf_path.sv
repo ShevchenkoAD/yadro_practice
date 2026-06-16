@@ -20,14 +20,14 @@ module apuf_path #(
 
   generate
     for (genvar i = 0; i < APUF_CHALLENGE_COUNT; i++) begin
-      (* dont_touch = "true" *) mux2x1 mux2x1_i_0_inst (
+      (* dont_touch = "true" *) mux2x1 mux2x1_i_inst_0 (
         .x0(path_0[i]),
         .x1(path_1[i]),
         .s(challenge_i[i]),
         .q(path_0[i+1])
       );
       
-      (* dont_touch = "true" *) mux2x1 mux2x1_i_1_inst (
+      (* dont_touch = "true" *) mux2x1 mux2x1_i_inst_1 (
         .x0(path_1[i]),
         .x1(path_0[i]),
         .s(challenge_i[i]),

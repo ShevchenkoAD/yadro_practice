@@ -3,7 +3,7 @@
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>apuf_parallel</spirit:name>
-  <spirit:version>1.0</spirit:version>
+  <spirit:version>1.1</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>rst_n</spirit:name>
@@ -326,7 +326,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/apuf_parallel_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/apuf_parallel_v1_1.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -373,10 +373,11 @@
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>xilinx.com:user:apuf_parallel_v_wrapper:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2026-06-15T12:17:48Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2026-06-16T08:50:54Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="xilinx.com:user:apuf_parallel_v_wrapper:1.0_ARCHIVE_LOCATION">d:/WorkSpace/HDL/yadro_practice/ip/apuf_parallel_ip/ip</xilinx:tag>
         <xilinx:tag xilinx:name="xilinx.com:user:apuf_parallel:1.0_ARCHIVE_LOCATION">d:/WorkSpace/HDL/yadro_practice/ip/apuf_parallel_ip/ip</xilinx:tag>
+        <xilinx:tag xilinx:name="xilinx.com:user:apuf_parallel:1.1_ARCHIVE_LOCATION">d:/WorkSpace/HDL/yadro_practice/ip/apuf_parallel_ip/ip</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

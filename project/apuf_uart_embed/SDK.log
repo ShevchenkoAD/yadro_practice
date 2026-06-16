@@ -257,3 +257,280 @@ con
 ----------------End of Script----------------
 
 15:13:32 INFO  : Launch script is exported to file 'D:\WorkSpace\HDL\yadro_practice\project\apuf_uart_embed\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_uart_driver.elf_on_local.tcl'
+15:32:27 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1781526627672,  Project:1781525531400
+15:32:27 INFO  : Project apuf_parallel_uart_design_wrapper_hw_platform_0's source hardware specification located at D:/WorkSpace/HDL/yadro_practice/project/apuf_parallel_uart_v1.0/apuf_parallel_uart_v1.0.sdk/apuf_parallel_uart_design_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+15:32:29 INFO  : Copied contents of D:/WorkSpace/HDL/yadro_practice/project/apuf_parallel_uart_v1.0/apuf_parallel_uart_v1.0.sdk/apuf_parallel_uart_design_wrapper.hdf into \apuf_parallel_uart_design_wrapper_hw_platform_0\system.hdf.
+15:32:32 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:32:32 INFO  : Clearing existing target manager status.
+15:32:32 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:32:32 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+15:32:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A" && level==0} -index 1' command is executed.
+15:32:45 INFO  : FPGA configured successfully with bitstream "D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_parallel_uart_design_wrapper_hw_platform_0/apuf_parallel_uart_design_wrapper.bit"
+15:32:58 INFO  : Disconnected from the channel tcfchan#3.
+15:32:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A" && level==0} -index 1' command is executed.
+15:32:59 INFO  : 'fpga -state' command is executed.
+15:32:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:32:59 INFO  : Jtag cable 'Digilent Zybo Z7 210351B10005A' is selected.
+15:32:59 INFO  : 'jtag frequency' command is executed.
+15:32:59 INFO  : Sourcing of 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:32:59 INFO  : Context for 'APU' is selected.
+15:32:59 INFO  : Hardware design information is loaded from 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf'.
+15:32:59 INFO  : 'configparams force-mem-access 1' command is executed.
+15:32:59 INFO  : Context for 'APU' is selected.
+15:32:59 INFO  : 'stop' command is executed.
+15:33:00 INFO  : 'ps7_init' command is executed.
+15:33:00 INFO  : 'ps7_post_config' command is executed.
+15:33:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:33:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:00 INFO  : The application 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:33:00 INFO  : 'configparams force-mem-access 0' command is executed.
+15:33:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+loadhw -hw D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+dow D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:33:00 INFO  : Memory regions updated for context APU
+15:33:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:33:00 INFO  : 'con' command is executed.
+15:33:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+con
+----------------End of Script----------------
+
+15:33:00 INFO  : Launch script is exported to file 'D:\WorkSpace\HDL\yadro_practice\project\apuf_uart_embed\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_uart_driver.elf_on_local.tcl'
+18:02:04 INFO  : Disconnected from the channel tcfchan#4.
+12:00:57 INFO  : Launching XSCT server: xsct.bat -interactive D:\WorkSpace\HDL\yadro_practice\project\apuf_uart_embed\temp_xsdb_launch_script.tcl
+12:01:00 INFO  : XSCT server has started successfully.
+12:01:07 INFO  : Successfully done setting XSCT server connection channel  
+12:01:07 INFO  : Successfully done setting SDK workspace  
+12:01:09 INFO  : Registering command handlers for SDK TCF services
+12:01:10 INFO  : Processing command line option -hwspec D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.sdk/apuf_uart_design_wrapper.hdf.
+12:01:10 INFO  : Checking for hwspec changes in the project apuf_uart_design_wrapper_hw_platform_0.
+12:03:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1781600366453,  Project:1781259292900
+12:03:46 INFO  : Project apuf_uart_design_wrapper_hw_platform_0's source hardware specification located at D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.sdk/apuf_uart_design_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+12:03:47 INFO  : Copied contents of D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.sdk/apuf_uart_design_wrapper.hdf into \apuf_uart_design_wrapper_hw_platform_0\system.hdf.
+12:03:49 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:03:52 INFO  : 
+12:03:52 INFO  : Updating hardware inferred compiler options for uart_driver.
+12:03:52 INFO  : Clearing existing target manager status.
+12:03:52 INFO  : Closing and re-opening the MSS file of ther project uart_driver_bsp
+12:03:53 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:03:56 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:07:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A" && level==0} -index 1' command is executed.
+12:07:18 INFO  : FPGA configured successfully with bitstream "D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/apuf_uart_design_wrapper.bit"
+12:07:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A" && level==0} -index 1' command is executed.
+12:07:41 INFO  : 'fpga -state' command is executed.
+12:07:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:07:42 INFO  : Jtag cable 'Digilent Zybo Z7 210351B10005A' is selected.
+12:07:42 INFO  : 'jtag frequency' command is executed.
+12:07:42 INFO  : Sourcing of 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:07:42 INFO  : Context for 'APU' is selected.
+12:07:42 INFO  : Hardware design information is loaded from 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf'.
+12:07:42 INFO  : 'configparams force-mem-access 1' command is executed.
+12:07:42 INFO  : Context for 'APU' is selected.
+12:07:42 INFO  : 'stop' command is executed.
+12:07:42 INFO  : 'ps7_init' command is executed.
+12:07:42 INFO  : 'ps7_post_config' command is executed.
+12:07:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:07:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:42 INFO  : The application 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:07:42 INFO  : 'configparams force-mem-access 0' command is executed.
+12:07:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+loadhw -hw D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+dow D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:07:42 INFO  : Memory regions updated for context APU
+12:07:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:07:42 INFO  : 'con' command is executed.
+12:07:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+con
+----------------End of Script----------------
+
+12:07:42 INFO  : Launch script is exported to file 'D:\WorkSpace\HDL\yadro_practice\project\apuf_uart_embed\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_uart_driver.elf_on_local.tcl'
+12:36:38 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1781602396518,  Project:1781600366453
+12:36:38 INFO  : Project apuf_uart_design_wrapper_hw_platform_0's source hardware specification located at D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.sdk/apuf_uart_design_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+12:36:40 INFO  : Copied contents of D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_v1.0/apuf_uart_v1.0.sdk/apuf_uart_design_wrapper.hdf into \apuf_uart_design_wrapper_hw_platform_0\system.hdf.
+12:36:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:36:44 INFO  : 
+12:36:45 INFO  : Updating hardware inferred compiler options for uart_driver.
+12:36:45 INFO  : Clearing existing target manager status.
+12:36:45 INFO  : Closing and re-opening the MSS file of ther project uart_driver_bsp
+12:36:45 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+12:36:48 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+12:37:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:37:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A" && level==0} -index 1' command is executed.
+12:37:27 INFO  : FPGA configured successfully with bitstream "D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/apuf_uart_design_wrapper.bit"
+12:37:36 INFO  : Disconnected from the channel tcfchan#1.
+12:37:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A" && level==0} -index 1' command is executed.
+12:37:37 INFO  : 'fpga -state' command is executed.
+12:37:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:37:38 INFO  : Jtag cable 'Digilent Zybo Z7 210351B10005A' is selected.
+12:37:38 INFO  : 'jtag frequency' command is executed.
+12:37:38 INFO  : Sourcing of 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:37:38 INFO  : Context for 'APU' is selected.
+12:37:38 INFO  : Hardware design information is loaded from 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf'.
+12:37:38 INFO  : 'configparams force-mem-access 1' command is executed.
+12:37:38 INFO  : Context for 'APU' is selected.
+12:37:38 INFO  : 'stop' command is executed.
+12:37:38 INFO  : 'ps7_init' command is executed.
+12:37:38 INFO  : 'ps7_post_config' command is executed.
+12:37:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:37:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:37:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:37:38 INFO  : The application 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:37:38 INFO  : 'configparams force-mem-access 0' command is executed.
+12:37:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+loadhw -hw D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+dow D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:37:38 INFO  : Memory regions updated for context APU
+12:37:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:37:38 INFO  : 'con' command is executed.
+12:37:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10005A"} -index 0
+con
+----------------End of Script----------------
+
+12:37:38 INFO  : Launch script is exported to file 'D:\WorkSpace\HDL\yadro_practice\project\apuf_uart_embed\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_uart_driver.elf_on_local.tcl'
+14:51:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A" && level==0} -index 1' command is executed.
+14:51:18 INFO  : FPGA configured successfully with bitstream "D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/apuf_uart_design_wrapper.bit"
+14:51:27 INFO  : Disconnected from the channel tcfchan#2.
+14:51:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A" && level==0} -index 1' command is executed.
+14:51:28 INFO  : 'fpga -state' command is executed.
+14:51:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:51:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351B10003A' is selected.
+14:51:28 INFO  : 'jtag frequency' command is executed.
+14:51:28 INFO  : Sourcing of 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:51:28 INFO  : Context for 'APU' is selected.
+14:51:28 INFO  : Hardware design information is loaded from 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf'.
+14:51:28 INFO  : 'configparams force-mem-access 1' command is executed.
+14:51:28 INFO  : Context for 'APU' is selected.
+14:51:28 INFO  : 'stop' command is executed.
+14:51:28 INFO  : 'ps7_init' command is executed.
+14:51:28 INFO  : 'ps7_post_config' command is executed.
+14:51:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:28 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:51:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:29 INFO  : The application 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:51:29 INFO  : 'configparams force-mem-access 0' command is executed.
+14:51:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+loadhw -hw D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+dow D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:51:29 INFO  : Memory regions updated for context APU
+14:51:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:51:29 INFO  : 'con' command is executed.
+14:51:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+con
+----------------End of Script----------------
+
+14:51:29 INFO  : Launch script is exported to file 'D:\WorkSpace\HDL\yadro_practice\project\apuf_uart_embed\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_uart_driver.elf_on_local.tcl'
+14:56:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A" && level==0} -index 1' command is executed.
+14:56:47 INFO  : FPGA configured successfully with bitstream "D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/apuf_uart_design_wrapper.bit"
+14:56:57 INFO  : Disconnected from the channel tcfchan#3.
+14:56:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A" && level==0} -index 1' command is executed.
+14:56:58 INFO  : 'fpga -state' command is executed.
+14:56:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351B10003A' is selected.
+14:56:58 INFO  : 'jtag frequency' command is executed.
+14:56:58 INFO  : Sourcing of 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:56:58 INFO  : Context for 'APU' is selected.
+14:56:58 INFO  : Hardware design information is loaded from 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf'.
+14:56:58 INFO  : 'configparams force-mem-access 1' command is executed.
+14:56:58 INFO  : Context for 'APU' is selected.
+14:56:58 INFO  : 'stop' command is executed.
+14:56:58 INFO  : 'ps7_init' command is executed.
+14:56:58 INFO  : 'ps7_post_config' command is executed.
+14:56:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:56:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:56:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:56:59 INFO  : The application 'D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:56:59 INFO  : 'configparams force-mem-access 0' command is executed.
+14:56:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+loadhw -hw D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/apuf_uart_design_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+dow D:/WorkSpace/HDL/yadro_practice/project/apuf_uart_embed/uart_driver/Debug/uart_driver.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:56:59 INFO  : Memory regions updated for context APU
+14:56:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:56:59 INFO  : 'con' command is executed.
+14:56:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351B10003A"} -index 0
+con
+----------------End of Script----------------
+
+14:56:59 INFO  : Launch script is exported to file 'D:\WorkSpace\HDL\yadro_practice\project\apuf_uart_embed\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_uart_driver.elf_on_local.tcl'

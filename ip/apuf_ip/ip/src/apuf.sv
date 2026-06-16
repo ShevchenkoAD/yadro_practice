@@ -24,7 +24,7 @@ module apuf (
   logic tx_dv_ff,   tx_dv_next;
   logic [APUF_DATA_BITS_OUT - 1:0] tx_data_ff, tx_data_next;
   
-  logic [APUF_DATA_BITS_IN - 1 + 32 :0] data_counter_ff, data_counter_next;
+  logic [APUF_DATA_BITS_IN - 1 + APUF_SHIFT_COUNT :0] data_counter_ff, data_counter_next;
   logic [$clog2(APUF_DATA_BITS_OUT):0] bit_counter_ff,  bit_counter_next;
 
   logic [$clog2(APUF_CYCLES_COUNT):0] cycles_counter_ff, cycles_counter_next;
@@ -132,7 +132,7 @@ module apuf (
     unique case (apuf_state_ff) 
       APUF_IDLE: begin
         if (rx_dv_i == 'b1) begin
-            data_counter_next = rx_data_i << 29; 
+            data_counter_next = rx_data_i << APUF_SHIFT_COUNT;
         end
       end
       

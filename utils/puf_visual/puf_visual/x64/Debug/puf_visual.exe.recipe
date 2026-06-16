@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\WorkSpace\HDL\yadro_practice\project\puf_visual\x64\Debug\puf_visual.exe</FullPath>
+      <FullPath>D:\WorkSpace\HDL\yadro_practice\utils\puf_visual\x64\Debug\puf_visual.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

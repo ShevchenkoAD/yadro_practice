@@ -71,20 +71,20 @@
         <CompFileExtendedInfo CompFileName="apuf_uart_design.bd" FileRelPathName="ip/apuf_uart_design_processing_system7_0_0/apuf_uart_design_processing_system7_0_0.xci">
           <Proxy FileSetName="apuf_uart_design_processing_system7_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="apuf_uart_design.bd" FileRelPathName="ip/apuf_uart_design_uart_tx_0_0/apuf_uart_design_uart_tx_0_0.xci">
+          <Proxy FileSetName="apuf_uart_design_uart_tx_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="apuf_uart_design.bd" FileRelPathName="ip/apuf_uart_design_axi_uartlite_0_0/apuf_uart_design_axi_uartlite_0_0.xci">
           <Proxy FileSetName="apuf_uart_design_axi_uartlite_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="apuf_uart_design.bd" FileRelPathName="ip/apuf_uart_design_rst_ps7_0_50M_0/apuf_uart_design_rst_ps7_0_50M_0.xci">
           <Proxy FileSetName="apuf_uart_design_rst_ps7_0_50M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="apuf_uart_design.bd" FileRelPathName="ip/apuf_uart_design_apuf_0_0/apuf_uart_design_apuf_0_0.xci">
-          <Proxy FileSetName="apuf_uart_design_apuf_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="apuf_uart_design.bd" FileRelPathName="ip/apuf_uart_design_uart_tx_0_0/apuf_uart_design_uart_tx_0_0.xci">
-          <Proxy FileSetName="apuf_uart_design_uart_tx_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="apuf_uart_design.bd" FileRelPathName="ip/apuf_uart_design_uart_rx_0_0/apuf_uart_design_uart_rx_0_0.xci">
           <Proxy FileSetName="apuf_uart_design_uart_rx_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="apuf_uart_design.bd" FileRelPathName="ip/apuf_uart_design_apuf_0_0/apuf_uart_design_apuf_0_0.xci">
+          <Proxy FileSetName="apuf_uart_design_apuf_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/apuf_uart_design/hdl/apuf_uart_design_wrapper.v">

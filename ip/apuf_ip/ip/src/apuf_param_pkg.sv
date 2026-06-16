@@ -9,12 +9,14 @@ package apuf_param_pkg;
   parameter int APUF_DATA_BITS_IN  = GENERAL_UART_DATA_BITS;
   parameter int APUF_DATA_BITS_OUT = GENERAL_UART_DATA_BITS;
 
-  parameter int APUF_CHALLENGE_COUNT          = GENERAL_APUF_CHALLENGE_COUNT;    
+  parameter int         APUF_CHALLENGE_COUNT  = GENERAL_APUF_CHALLENGE_COUNT;    
   parameter apuf_vector APUF_LFSR_SEED_VECTOR = GENERAL_APUF_LFSR_SEED_VECTOR;
   parameter apuf_vector APUF_LFSR_CHAR_POLY   = GENERAL_APUF_LFSR_CHAR_POLY;
   parameter apuf_matrix APUF_LFSR_CHAR_MATRIX = GENERAL_APUF_LFSR_CHAR_MATRIX;
   
   parameter int APUF_CYCLES_COUNT = 4096;
+
+  parameter int APUF_SHIFT_COUNT  = 19;
 
   localparam int APUF_STATE_W = `CONFIG_APUF_STATE_W;
   

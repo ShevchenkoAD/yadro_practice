@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Fri Jun 12 13:14:36 2026
+| Date             : Tue Jun 16 12:33:01 2026
 | Host             : Shef running 64-bit major release  (build 9200)
 | Command          : report_power -file apuf_uart_design_wrapper_power_routed.rpt -pb apuf_uart_design_wrapper_power_summary_routed.pb -rpx apuf_uart_design_wrapper_power_routed.rpx
 | Design           : apuf_uart_design_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.542        |
+| Total On-Chip Power (W)  | 1.548        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.422        |
+| Dynamic (W)              | 1.427        |
 | Device Static (W)        | 0.121        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 67.2         |
-| Junction Temperature (C) | 42.8         |
+| Max Ambient (C)          | 67.1         |
+| Junction Temperature (C) | 42.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.014 |        3 |       --- |             --- |
-| Slice Logic             |     0.005 |     2371 |       --- |             --- |
-|   LUT as Logic          |     0.005 |     1113 |     17600 |            6.32 |
-|   Register              |    <0.001 |      781 |     35200 |            2.22 |
-|   CARRY4                |    <0.001 |       19 |      4400 |            0.43 |
+| Clocks                  |     0.019 |        3 |       --- |             --- |
+| Slice Logic             |     0.005 |     2325 |       --- |             --- |
+|   LUT as Logic          |     0.005 |     1084 |     17600 |            6.16 |
+|   Register              |    <0.001 |      768 |     35200 |            2.18 |
+|   CARRY4                |    <0.001 |       16 |      4400 |            0.36 |
 |   LUT as Shift Register |    <0.001 |       47 |      6000 |            0.78 |
 |   Others                |     0.000 |      210 |       --- |             --- |
-| Signals                 |     0.003 |     1480 |       --- |             --- |
+| Signals                 |     0.003 |     1442 |       --- |             --- |
 | I/O                     |    <0.001 |        4 |       100 |            4.00 |
 | PS7                     |     1.399 |        1 |       --- |             --- |
 | Static Power            |     0.121 |          |           |                 |
-| Total                   |     1.542 |          |           |                 |
+| Total                   |     1.548 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.028 |       0.022 |      0.007 |
+| Vccint    |       1.000 |     0.034 |       0.027 |      0.007 |
 | Vccaux    |       1.800 |     0.008 |       0.000 |      0.008 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -86,7 +86,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.746 |       0.717 |      0.028 |
+| Vccpint   |       1.000 |     0.746 |       0.717 |      0.029 |
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.350 |     0.413 |       0.411 |      0.002 |
@@ -149,270 +149,270 @@ Table of Contents
 +-----------------------------------------------------------------------------+-----------+
 | Name                                                                        | Power (W) |
 +-----------------------------------------------------------------------------+-----------+
-| apuf_uart_design_wrapper                                                    |     1.422 |
-|   apuf_uart_design_i                                                        |     1.421 |
-|     apuf_0                                                                  |     0.019 |
-|       inst                                                                  |     0.019 |
-|         u_apuf                                                              |     0.019 |
-|           apuf_path_inst_0                                                  |     0.015 |
+| apuf_uart_design_wrapper                                                    |     1.427 |
+|   apuf_uart_design_i                                                        |     1.426 |
+|     apuf_0                                                                  |     0.024 |
+|       inst                                                                  |     0.024 |
+|         u_apuf                                                              |     0.024 |
+|           apuf_path_inst_0                                                  |     0.020 |
 |             d_ff_inst_0                                                     |    <0.001 |
 |             d_ff_inst_1                                                     |    <0.001 |
-|             genblk1[0].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[0].mux2x1_i_1_inst                                      |    <0.001 |
-|             genblk1[100].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[100].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[101].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[101].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[102].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[102].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[103].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[103].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[104].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[104].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[105].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[105].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[106].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[106].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[107].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[107].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[108].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[108].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[109].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[109].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[10].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[10].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[110].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[110].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[111].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[111].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[112].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[112].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[113].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[113].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[114].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[114].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[115].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[115].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[116].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[116].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[117].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[117].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[118].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[118].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[119].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[119].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[11].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[11].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[120].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[120].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[121].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[121].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[122].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[122].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[123].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[123].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[124].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[124].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[125].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[125].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[126].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[126].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[127].mux2x1_i_0_inst                                    |    <0.001 |
-|             genblk1[127].mux2x1_i_1_inst                                    |    <0.001 |
-|             genblk1[12].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[12].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[13].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[13].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[14].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[14].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[15].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[15].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[16].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[16].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[17].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[17].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[18].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[18].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[19].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[19].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[1].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[1].mux2x1_i_1_inst                                      |    <0.001 |
-|             genblk1[20].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[20].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[21].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[21].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[22].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[22].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[23].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[23].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[24].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[24].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[25].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[25].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[26].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[26].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[27].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[27].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[28].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[28].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[29].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[29].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[2].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[2].mux2x1_i_1_inst                                      |    <0.001 |
-|             genblk1[30].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[30].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[31].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[31].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[32].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[32].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[33].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[33].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[34].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[34].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[35].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[35].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[36].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[36].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[37].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[37].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[38].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[38].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[39].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[39].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[3].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[3].mux2x1_i_1_inst                                      |    <0.001 |
-|             genblk1[40].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[40].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[41].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[41].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[42].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[42].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[43].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[43].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[44].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[44].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[45].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[45].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[46].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[46].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[47].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[47].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[48].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[48].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[49].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[49].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[4].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[4].mux2x1_i_1_inst                                      |    <0.001 |
-|             genblk1[50].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[50].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[51].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[51].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[52].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[52].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[53].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[53].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[54].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[54].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[55].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[55].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[56].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[56].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[57].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[57].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[58].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[58].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[59].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[59].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[5].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[5].mux2x1_i_1_inst                                      |    <0.001 |
-|             genblk1[60].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[60].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[61].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[61].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[62].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[62].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[63].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[63].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[64].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[64].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[65].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[65].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[66].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[66].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[67].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[67].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[68].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[68].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[69].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[69].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[6].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[6].mux2x1_i_1_inst                                      |    <0.001 |
-|             genblk1[70].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[70].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[71].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[71].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[72].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[72].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[73].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[73].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[74].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[74].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[75].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[75].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[76].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[76].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[77].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[77].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[78].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[78].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[79].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[79].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[7].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[7].mux2x1_i_1_inst                                      |    <0.001 |
-|             genblk1[80].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[80].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[81].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[81].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[82].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[82].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[83].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[83].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[84].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[84].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[85].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[85].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[86].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[86].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[87].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[87].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[88].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[88].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[89].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[89].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[8].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[8].mux2x1_i_1_inst                                      |    <0.001 |
-|             genblk1[90].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[90].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[91].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[91].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[92].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[92].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[93].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[93].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[94].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[94].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[95].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[95].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[96].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[96].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[97].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[97].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[98].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[98].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[99].mux2x1_i_0_inst                                     |    <0.001 |
-|             genblk1[99].mux2x1_i_1_inst                                     |    <0.001 |
-|             genblk1[9].mux2x1_i_0_inst                                      |    <0.001 |
-|             genblk1[9].mux2x1_i_1_inst                                      |    <0.001 |
+|             genblk1[0].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[0].mux2x1_i_inst_1                                      |    <0.001 |
+|             genblk1[100].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[100].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[101].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[101].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[102].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[102].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[103].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[103].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[104].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[104].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[105].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[105].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[106].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[106].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[107].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[107].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[108].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[108].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[109].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[109].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[10].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[10].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[110].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[110].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[111].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[111].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[112].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[112].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[113].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[113].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[114].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[114].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[115].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[115].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[116].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[116].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[117].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[117].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[118].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[118].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[119].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[119].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[11].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[11].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[120].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[120].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[121].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[121].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[122].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[122].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[123].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[123].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[124].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[124].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[125].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[125].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[126].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[126].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[127].mux2x1_i_inst_0                                    |    <0.001 |
+|             genblk1[127].mux2x1_i_inst_1                                    |    <0.001 |
+|             genblk1[12].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[12].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[13].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[13].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[14].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[14].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[15].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[15].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[16].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[16].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[17].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[17].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[18].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[18].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[19].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[19].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[1].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[1].mux2x1_i_inst_1                                      |    <0.001 |
+|             genblk1[20].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[20].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[21].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[21].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[22].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[22].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[23].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[23].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[24].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[24].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[25].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[25].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[26].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[26].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[27].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[27].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[28].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[28].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[29].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[29].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[2].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[2].mux2x1_i_inst_1                                      |    <0.001 |
+|             genblk1[30].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[30].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[31].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[31].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[32].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[32].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[33].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[33].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[34].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[34].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[35].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[35].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[36].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[36].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[37].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[37].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[38].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[38].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[39].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[39].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[3].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[3].mux2x1_i_inst_1                                      |    <0.001 |
+|             genblk1[40].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[40].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[41].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[41].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[42].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[42].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[43].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[43].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[44].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[44].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[45].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[45].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[46].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[46].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[47].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[47].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[48].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[48].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[49].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[49].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[4].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[4].mux2x1_i_inst_1                                      |    <0.001 |
+|             genblk1[50].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[50].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[51].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[51].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[52].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[52].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[53].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[53].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[54].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[54].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[55].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[55].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[56].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[56].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[57].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[57].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[58].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[58].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[59].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[59].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[5].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[5].mux2x1_i_inst_1                                      |    <0.001 |
+|             genblk1[60].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[60].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[61].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[61].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[62].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[62].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[63].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[63].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[64].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[64].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[65].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[65].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[66].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[66].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[67].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[67].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[68].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[68].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[69].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[69].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[6].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[6].mux2x1_i_inst_1                                      |    <0.001 |
+|             genblk1[70].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[70].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[71].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[71].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[72].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[72].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[73].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[73].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[74].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[74].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[75].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[75].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[76].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[76].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[77].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[77].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[78].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[78].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[79].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[79].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[7].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[7].mux2x1_i_inst_1                                      |    <0.001 |
+|             genblk1[80].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[80].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[81].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[81].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[82].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[82].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[83].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[83].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[84].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[84].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[85].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[85].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[86].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[86].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[87].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[87].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[88].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[88].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[89].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[89].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[8].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[8].mux2x1_i_inst_1                                      |    <0.001 |
+|             genblk1[90].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[90].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[91].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[91].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[92].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[92].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[93].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[93].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[94].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[94].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[95].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[95].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[96].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[96].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[97].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[97].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[98].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[98].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[99].mux2x1_i_inst_0                                     |    <0.001 |
+|             genblk1[99].mux2x1_i_inst_1                                     |    <0.001 |
+|             genblk1[9].mux2x1_i_inst_0                                      |    <0.001 |
+|             genblk1[9].mux2x1_i_inst_1                                      |    <0.001 |
 |           lfsr_inst_0                                                       |     0.003 |
 |           sipo_inst_0                                                       |    <0.001 |
 |     axi_uartlite_0                                                          |    <0.001 |

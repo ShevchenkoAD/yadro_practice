@@ -47,12 +47,12 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:user:apuf:1.0
+// IP VLNV: xilinx.com:user:apuf:1.1
 // IP Revision: 1
 
 (* X_CORE_INFO = "apuf_v_wrapper,Vivado 2018.2" *)
 (* CHECK_LICENSE_TYPE = "apuf_uart_design_apuf_0_0,apuf_v_wrapper,{}" *)
-(* CORE_GENERATION_INFO = "apuf_uart_design_apuf_0_0,apuf_v_wrapper,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=apuf,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG}" *)
+(* CORE_GENERATION_INFO = "apuf_uart_design_apuf_0_0,apuf_v_wrapper,{x_ipProduct=Vivado 2018.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=apuf,x_ipVersion=1.1,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=VERILOG}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module apuf_uart_design_apuf_0_0 (

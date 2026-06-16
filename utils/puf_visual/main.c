@@ -9,8 +9,9 @@
 #define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 
-#define TARGET_FILENAME     "D:\\WorkSpace\\HDL\\yadro_practice\\dump\\0138P9954\\uniform_40mil.bin"
-#define TARGET_BMP_FILENAME "D:\\WorkSpace\\HDL\\yadro_practice\\dump\\0138P9954\\visual.bmp"
+#define TARGET_BMP_PREFIX "visual_"
+#define TARGET_BMP_EXT    ".bmp"
+
 
 #define HEIGHT 256
 #define WIDTH  256
@@ -18,8 +19,11 @@
 // take dump file and visualize it in b/w 
 // bmp rgb
 
-char* dump_filename;
-char* bmp_filename;
+char dump_filepath[256];
+char dump_filename[256];
+
+char bmp_filepath[256];
+char bmp_filename[256];
 
 size_t byte_count;
 uint8_t* raw_data;
@@ -28,7 +32,7 @@ size_t processed_data [HEIGHT][WIDTH];
 void read_rawdata(void) {
     FILE* dump_file;
 
-    fopen_s(&dump_file, dump_filename, "rb");
+    fopen_s(&dump_file, dump_filepath, "rb");
 
     fseek(dump_file, 0, SEEK_END);
     byte_count = ftell(dump_file);
@@ -104,7 +108,7 @@ void create_bmp(void) {
         }
     }
 
-    stbi_write_bmp(bmp_filename, WIDTH, HEIGHT, 3, bmp_data);
+    stbi_write_bmp(bmp_filepath, WIDTH, HEIGHT, 3, bmp_data);
 
     free(bmp_data);
 
@@ -113,12 +117,33 @@ void create_bmp(void) {
 
 int main(int argc, char* argv[]) {
     
-    //if (argc != 3) {
-    //    printf("Incorrect arg count.");
-    //}
+    if (argc != 2) {
+        printf("Incorrect arg count.");
+        return;
+    }
 
-    dump_filename = TARGET_FILENAME;
-    bmp_filename  = TARGET_BMP_FILENAME;
+    char* temp;
+    int count;
+
+    strcpy(dump_filepath, argv[1]);
+
+    temp = strrchr(dump_filepath, '\\');
+
+    strcpy(dump_filename, (temp + 1));
+
+    strcpy(bmp_filename, TARGET_BMP_PREFIX);
+    strcat(bmp_filename, dump_filename);
+
+    temp = strrchr(bmp_filename, '.');
+    strcpy(temp, TARGET_BMP_EXT);
+
+    temp = strrchr(dump_filepath, '\\');
+
+    count = strlen(dump_filepath) - strlen(temp) + 1;
+
+    strncpy(bmp_filepath, dump_filepath, count);
+    strcat(bmp_filepath, "\0");
+    strcat(bmp_filepath, bmp_filename);
 
     read_rawdata();
 

@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\WorkSpace\HDL\yadro_practice\project\dump_file_process\x64\Debug\dump_file_process.exe</FullPath>
+      <FullPath>D:\WorkSpace\HDL\yadro_practice\utils\dump_file_process\x64\Debug\dump_file_process.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

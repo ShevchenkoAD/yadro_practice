@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="false" key="apuf_parallel_uart_design_wrapper_hw_platform_0-partial_bit"/>
+	<item value="" key="apuf_parallel_uart_design_wrapper_hw_platform_0-bmmFile"/>
 	<item value="apuf_uart_design_wrapper.bit" key="apuf_uart_design_wrapper_hw_platform_0-bitFile"/>
+	<item value="Auto Detect" key="apuf_parallel_uart_design_wrapper_hw_platform_0-device"/>
 	<item value="Auto Detect" key="apuf_uart_design_wrapper_hw_platform_0-device"/>
-	<item value="apuf_uart_design_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="apuf_parallel_uart_design_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
 	<item value="" key="apuf_uart_design_wrapper_hw_platform_0-bmmFile"/>
 	<item value="Local" key="apuf_uart_design_wrapper_hw_platform_0-target"/>
+	<item value="apuf_parallel_uart_design_wrapper.bit" key="apuf_parallel_uart_design_wrapper_hw_platform_0-bitFile"/>
+	<item value="Local" key="apuf_parallel_uart_design_wrapper_hw_platform_0-target"/>
 	<item value="false" key="apuf_uart_design_wrapper_hw_platform_0-partial_bit"/>
 </section>

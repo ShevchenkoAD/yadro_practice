@@ -1,0 +1,13 @@
+﻿  main.c
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(37,3): warning C4033: 'count_dirs_in_dir' must return a value
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(52,4): warning C4033: 'count_dirs_in_dir' must return a value
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(76,3): warning C4033: 'count_seq_in_set' must return a value
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(92,4): warning C4033: 'count_seq_in_set' must return a value
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(133,3): warning C4033: 'read_one_board' must return a value
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(149,4): warning C4033: 'read_one_board' must return a value
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(166,12): warning C4047: '=': 'intra_set **' differs in levels of indirection from 'intra_set *'
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(349,35): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(63,1): warning C4715: 'count_dirs_in_dir': not all control paths return a value
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(104,1): warning C4715: 'count_seq_in_set': not all control paths return a value
+D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\main.c(162,1): warning C4715: 'read_one_board': not all control paths return a value
+  puf_metrics.vcxproj -> D:\WorkSpace\HDL\yadro_practice\utils\puf_metrics\x64\Debug\puf_metrics.exe
